@@ -119,15 +119,19 @@ Crear un volumen en Docker:docker volume create pgdata
 ### Paso 2: Crear un contenedor PostgreSQL con el nombre server_db2, asociando el volumen creado:
 Se crea un contenedro PostgreSQL con volumen: docker run --Ale server_db2 -e POSTGRES_PASSWORD=1234 -p 5433:5432 -v pgdata:/var/lib/postgresql/data -d postgres
 
-<img src="imagen 2.png" alt="Paso2" width="800">
+<img src="imagen 2.jpg" alt="Paso2" width="800">
+
+Verifico que el contenedor esté corriendo
+
+<img src="imagen02.jpg" alt="Paso2" width="800">
 
 ### Paso 3: Conectarse al contenedor con DataGrip o TablePlus.
 Se conecto desde TablePlus a server_db2, usando:  localhost, puerto 5433, usuario postgres, contraseña 1234.
-<img src="imagen 3.png" alt="Paso3" width="800">
+<img src="imagen 3.jpg" alt="Paso3" width="800">
 
 ### Paso 4: Crear la base de datos test.
 Se crea la base de datos test.
-<img src="imagen 4.png" alt="Paso4" width="800">
+<img src="imagen 4.jpg" alt="Paso4" width="800">
 
 ### Paso 5: Crear la tabla customer con los campos: id, fullname, status.
 Se crea la base de datos customer con sus respectivos campos.
