@@ -41,37 +41,32 @@ Para realizar esta practica el estudiante necesita tener claro los siguientes te
 ## Parte 1: Base de datos sin volumen
 
 ### Paso 1:Crear un contenedor PostgreSQL con el nombre server_db1.
-Se inicia el contenedor jdllanghinginx1 en segundo plano, exponiendo el puerto interno 80 en el 8089 del host para acceder al servidor web.
+Dentro de la terminal con el contenedor se ejecuta este comando: docker run --name server_db1 -e POSTGRES_PASSWORD=1234 -p 5432:5432 -d postgres. De esta manera se crea y se ejecuta un contenedor PostgreSQL con su puerto.
+
 <img src="1.jpg" alt="Paso1" width="800">
 
 ### Paso 2: Conectar un administrador de base de datos (como DataGrip o TablePlus) al contenedor server_db1.
-Se inicia el contenedor jdllanghinginx2 en segundo plano, exponiendo el puerto interno 80 en el 8090 del host para acceder al servidor web.
+Se conecto con un administrador de base de datos, en este caso se utilizo TablePlus para poder conectar con server_db1
 
-<img src="imagen 2.png" alt="Paso2" width="800">
+<img src="2.jpg" alt="Paso2" width="800">
 
 ### Paso 3: Crear una base de datos llamada test.
-Se copia el archivo index.html desde el contenedor jdllanghinginx1 al host como index1.html.
-<img src="imagen 3.png" alt="Paso3" width="800">
+Se crea la tabla llamado test, luego conectamos a la base de datos creada seleccionandola.
+<img src="3.jpg" alt="Paso3" width="800">
+
 
 ### Paso 4: En la base de datos test, crear una tabla llamada customer con los campos: id, fullname y status.
-Se edita el archivo index1.html con un editor para agregar información del instituto.
-<img src="imagen 5.png" alt="Paso4" width="800">
-
-
-Finalmente la pagina editada con la infomcaion del instituto.
-<img src="imagen 6.png" alt="Paso6" width="800">
+Se crea la tabla customer.
+<img src="4.jpg" alt="Paso4" width="800">
 
 ### Paso 5: Insertar al menos un registro en la tabla customer
-Ahora procedemos a hacer todos los pasos que se realizo con jdllanghinginx1 para jdllanghinginx2.
-<img src="imagen 7.png" alt="Paso6" width="800">
+Insertar registroo en eeste caso se inserto dos registros.
 
-Se edita el archivo index2.html con un editor para agregar información del estudiante.
-
-<img src="imagen 8.png" alt="Paso6" width="800">
+<img src="5.jpg" alt="Paso5" width="800">
 
 ### Paso 6: Detener y eliminar el contenedor server_db1.
-Ahora procedemos a hacer todos los pasos que se realizo con jdllanghinginx1 para jdllanghinginx2.
-<img src="imagen 7.png" alt="Paso6" width="800">
+.......
+<img src="6.png" alt="Paso6" width="800">
 
 ### Paso 7: Volver a crear el contenedor PostgreSQL con el mismo nombre server_db1.
 Ahora procedemos a hacer todos los pasos que se realizo con jdllanghinginx1 para jdllanghinginx2.
