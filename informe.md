@@ -27,7 +27,7 @@ A su vez, se utilizó TabletPlus como administrador visual para conectarse a la 
 Para realizar esta practica el estudiante necesita tener claro los siguientes temas:
 - Uso de la terminal o línea de comandos
 - Manejo de navegador
-- uso de Docker
+- Uso de Docker
 - Fundamentos de bases de datos relacionales
 - TablePlus o DataGrip
 
@@ -36,15 +36,15 @@ Para realizar esta practica el estudiante necesita tener claro los siguientes te
 - Comprender la necesidad de persistencia en aplicaciones basadas en contenedores.
 - Crear y gestionar volúmenes persistentes usando comandos de Docker.
 - Identificar la diferencia entre ejecutar un contenedor con o sin volumen.
-- Crear y gestionar volúmenes persistentes usando comandos de Docker.
-  
+
+
 ## 6. Equipo necesario:
   
 - Computador con sistema operativo Windows/Linux/Mac 
 - Cuenta en docker play
 - Docker y terminal
 - TablePlus instalado
-- etc.
+
 
 ## 7. Material de apoyo.
    
