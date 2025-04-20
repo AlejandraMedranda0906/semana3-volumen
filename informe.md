@@ -140,7 +140,7 @@ Se conecta desde TablePlus y verificar que los datos sigan.
 
 ## 9. Resultados esperados:
     
-- Los resultados optenidos es que sin volumen, la base de datos y sus registros se pierden al eliminar el contenedor.
+- Los resultados obtenidos es que sin volumen, la base de datos y sus registros se pierden al eliminar el contenedor.
 - Con volumen, los datos permanecen incluso al eliminar y volver a crear el contenedor.
 - Se visualiza correctamente la información desde TablePlus.
 - Se refuerzan los conocimientos sobre persistencia de datos en contenedores Docker.
